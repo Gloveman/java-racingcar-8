@@ -17,4 +17,4 @@
 - [x] View 구현
 - [x] Controller 구현
 - [x] Controller 테스트 코드 작성
-- [ ] main 함수 완성
+- [x] main 함수 완성
