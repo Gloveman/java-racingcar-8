@@ -1,12 +1,20 @@
 # java-racingcar-precourse
 ## **구현할 기능**
-- [ ] Car.js 파일에 각 자동차를 표현하는 'Car' 클래스 설계
-- [ ] 자동차 전진 기능
-- [ ] 전진 기능 테스트 코드
-- [ ] 자동차 목록 입력
-- [ ] 이동 횟수 입력
-- [ ] 입력 예외 처리
-- [ ] 입력 기능 테스트 코드
-- [ ] 각 회차별 결과 출력
-- [ ] 최종 우승자 출력
-- [ ] 출력 기능 테스트 코드
+- [ ] Model, View, Controller 분리
+- Model prototype 작성
+- [ ] 매개변수 값(랜덤 값)에 따른 전진 처리(Car.js)
+- [ ] 라운드 실행 (RacingGame.java)
+- [ ] 우승자 판별 (RacingGame.java)
+- View prototype 작성
+- [ ] 경주할 자동차 이름, 시도 횟수 입력(inputView.java)
+- [ ] 차수별 실행 결과 출력(OutputView.java)
+- [ ] 우승자 출력(OutputView.java)
+- Controller prototype 작성
+- [ ] 입력 횟수동안 경주 진행(RacingController.java)
+- 구현
+- [ ] Model 구현
+- [ ] Model 테스트 코드 작성
+- [ ] View 구현, 예외 처리
+- [ ] View 테스트 코드 작성
+- [ ] Controller 구현
+- [ ] main 함수 완성
