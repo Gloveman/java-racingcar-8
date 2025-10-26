@@ -2,9 +2,9 @@
 ## **구현할 기능**
 - [x] Model, View, Controller 분리
 - Model prototype 작성
-- [ ] 매개변수 값(랜덤 값)에 따른 전진 처리(Car.js)
-- [ ] 라운드 실행 (RacingGame.java)
-- [ ] 우승자 판별 (RacingGame.java)
+- [x] 매개변수 값(랜덤 값)에 따른 전진 처리(Car.js)
+- [x] 라운드 실행 (RacingGame.java)
+- [x] 우승자 판별 (RacingGame.java)
 - View prototype 작성
 - [ ] 경주할 자동차 이름, 시도 횟수 입력(inputView.java)
 - [ ] 차수별 실행 결과 출력(OutputView.java)
