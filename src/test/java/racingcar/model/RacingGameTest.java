@@ -10,15 +10,15 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class RacingGameTest {
 
-  private Car gloveman;
-  private Car andrew;
+  private Car andy;
+  private Car lee;
   private List<Car> cars;
 
   @BeforeEach
   void setup() {
-    gloveman = new Car("gloveman");
-    andrew = new Car("andrew");
-    cars = List.of(gloveman, andrew);
+    andy = new Car("andy");
+    lee = new Car("lee");
+    cars = List.of(andy, lee);
   }
 
   @Test
@@ -29,8 +29,8 @@ class RacingGameTest {
 
     game.playRound();
 
-    assertThat(gloveman.getDistance()).isEqualTo(1);
-    assertThat(andrew.getDistance()).isEqualTo(1);
+    assertThat(andy.getDistance()).isEqualTo(1);
+    assertThat(lee.getDistance()).isEqualTo(1);
   }
 
   @Test
@@ -41,39 +41,39 @@ class RacingGameTest {
 
     game.playRound();
 
-    assertThat(gloveman.getDistance()).isZero();
-    assertThat(andrew.getDistance()).isZero();
+    assertThat(andy.getDistance()).isZero();
+    assertThat(lee.getDistance()).isZero();
   }
 
   @Test
   @DisplayName("단독 우승자 상황에서 getWinners가 해당 우승자를 반환")
   void getWinners_SingleWinner() {
-    //우승자가 gloveman이 되도록 설정
-    gloveman.move(5);
-    gloveman.move(5);
-    andrew.move(4);
+    //우승자가 andy이 되도록 설정
+    andy.move(5);
+    andy.move(5);
+    lee.move(4);
 
     RacingGame game = new RacingGame(cars, () -> 9);
 
     List<Car> winners = game.getWinners();
 
     assertThat(winners).hasSize(1);
-    assertThat(winners).containsExactly(gloveman);
+    assertThat(winners).containsExactly(andy);
   }
 
   @Test
   @DisplayName("공동 우승자 상황에서 getWinners가 모든 우승자를 반환")
   void getWinners_MultipleWinner() {
     //공동 우승이 되도록 설정
-    gloveman.move(5);
-    andrew.move(4);
+    andy.move(5);
+    lee.move(4);
 
     RacingGame game = new RacingGame(cars, () -> 9);
 
     List<Car> winners = game.getWinners();
 
     assertThat(winners).hasSize(2);
-    assertThat(winners).containsExactlyInAnyOrder(gloveman, andrew);
+    assertThat(winners).containsExactlyInAnyOrder(andy, lee);
   }
 
   @Test

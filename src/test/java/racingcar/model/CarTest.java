@@ -10,7 +10,7 @@ class CarTest {
   @Test
   @DisplayName("자동차 인스턴스 생성 시 이름과 초기 거리가 올바르게 설정된다")
   void constructor_Test() {
-    String carName = "Gloveman";
+    String carName = "Andy";
 
     Car car = new Car(carName);
 
@@ -21,7 +21,7 @@ class CarTest {
   @Test
   @DisplayName("move 메서드에서 randomnumber가 4 이상일때 전진한다")
   void move_Forward_Test() {
-    Car car = new Car("Gloveman");
+    Car car = new Car("Andy");
 
     car.move(4);
     car.move(8);
@@ -32,7 +32,7 @@ class CarTest {
   @Test
   @DisplayName("move 메서드에서 randomnumber가 4 미만일때 움직이지 않는다")
   void move_Stop_Test() {
-    Car car = new Car("Gloveman");
+    Car car = new Car("Andy");
 
     car.move(3);
     car.move(2);
