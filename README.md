@@ -1,6 +1,6 @@
 # java-racingcar-precourse
 ## **구현할 기능**
-- [ ] Model, View, Controller 분리
+- [x] Model, View, Controller 분리
 - Model prototype 작성
 - [ ] 매개변수 값(랜덤 값)에 따른 전진 처리(Car.js)
 - [ ] 라운드 실행 (RacingGame.java)
