@@ -6,9 +6,9 @@
 - [x] 라운드 실행 (RacingGame.java)
 - [x] 우승자 판별 (RacingGame.java)
 - View prototype 작성
-- [ ] 경주할 자동차 이름, 시도 횟수 입력(inputView.java)
-- [ ] 차수별 실행 결과 출력(OutputView.java)
-- [ ] 우승자 출력(OutputView.java)
+- [x] 경주할 자동차 이름, 시도 횟수 입력(inputView.java)
+- [x] 차수별 실행 결과 출력(OutputView.java)
+- [x] 우승자 출력(OutputView.java)
 - Controller prototype 작성
 - [ ] 입력 횟수동안 경주 진행(RacingController.java)
 - 구현
