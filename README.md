@@ -10,7 +10,7 @@
 - [x] 차수별 실행 결과 출력(OutputView.java)
 - [x] 우승자 출력(OutputView.java)
 - Controller prototype 작성
-- [ ] 입력 횟수동안 경주 진행(RacingController.java)
+- [x] 입력 횟수동안 경주 진행(RacingController.java)
 - 구현
 - [ ] Model 구현
 - [ ] Model 테스트 코드 작성
