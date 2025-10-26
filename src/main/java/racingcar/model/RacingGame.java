@@ -1,17 +1,18 @@
 package racingcar.model;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * 자동차 경주 게임의 전체 로직을 관리하는 model 클래스
- *  자동차 List와 랜덤 숫자 생성기를 맴버로 가짐
+ * 자동차 List와 랜덤 숫자 생성기를 맴버로 가짐
  */
 public class RacingGame {
   /**
-   *랜덤 숫자 생성 함수형 인터페이스
+   * 랜덤 숫자 생성 함수형 인터페이스
    */
   @FunctionalInterface
-  public interface RandomGenerator{
+  public interface RandomGenerator {
     int generate();
   }
 
@@ -20,7 +21,8 @@ public class RacingGame {
 
   /**
    * 자동차 리스트와 랜덤 생성 인스턴스를 입력받아 객체 생성
-   * @param cars 경주에 참여하는 자동차 목록
+   *
+   * @param cars            경주에 참여하는 자동차 목록
    * @param randomGenerator 랜덤 숫자 생성기
    */
   public RacingGame(List<Car> cars, RandomGenerator randomGenerator) {
@@ -32,19 +34,28 @@ public class RacingGame {
    * 각 라운드 진행
    */
   public void playRound() {
-
+    cars.forEach(car -> car.move(randomGenerator.generate()));
   }
 
   /**
    * 우승 자동차 리스트 반환
+   *
    * @return 우승 자동차들 리스트
    */
   public List<Car> getWinners() {
+    int maxDistance = cars.stream()
+        .mapToInt(Car::getDistance)
+        .max()
+        .orElse(0);
 
+    return cars.stream()
+        .filter(car -> car.getDistance() == maxDistance)
+        .collect(Collectors.toList());
   }
 
   /**
    * 자동차 리스트 반환
+   *
    * @return 경주에 참여한 모든 자동차 리스트
    */
   public List<Car> getCars() {

@@ -44,6 +44,8 @@ public class Car {
    * @param randomNumber RandomGenerator로 생성된 랜덤값
    */
   void move(int randomNumber) {
-
+    if (randomNumber > 3) {
+      distance += 1;
+    }
   }
 }

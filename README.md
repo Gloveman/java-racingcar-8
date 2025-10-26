@@ -12,7 +12,7 @@
 - Controller prototype 작성
 - [x] 입력 횟수동안 경주 진행(RacingController.java)
 - 구현
-- [ ] Model 구현
+- [x] Model 구현
 - [ ] Model 테스트 코드 작성
 - [ ] View 구현, 예외 처리
 - [ ] View 테스트 코드 작성
