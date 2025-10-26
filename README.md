@@ -14,7 +14,7 @@
 - 구현
 - [x] Model 구현
 - [x] Model 테스트 코드 작성
-- [ ] View 구현, 예외 처리
-- [ ] View 테스트 코드 작성
+- [ ] View 구현
 - [ ] Controller 구현
+- [ ] Controller 테스트 코드 작성
 - [ ] main 함수 완성
