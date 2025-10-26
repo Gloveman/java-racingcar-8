@@ -16,5 +16,5 @@
 - [x] Model 테스트 코드 작성
 - [x] View 구현
 - [x] Controller 구현
-- [ ] Controller 테스트 코드 작성
+- [x] Controller 테스트 코드 작성
 - [ ] main 함수 완성
